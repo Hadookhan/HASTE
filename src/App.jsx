@@ -11,7 +11,7 @@ function App() {
         <h1 className='mainHeader'>HASTE</h1>
       </div>
       <div className="card">
-        <p>Hello</p>
+        <p>Welcome to the new age of science</p>
       </div>
     </>
   )
