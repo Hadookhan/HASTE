@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import hasteLogo from './assets/haste.png'
+// import hasteLogo from './assets/haste.png'
 import './App.css'
 
 function App() {
