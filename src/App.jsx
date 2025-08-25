@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import hasteLogo from './assets/haste.png'
+// import hasteLogo from './assets/haste.png'
 import './App.css'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <h1 className='mainHeader'>HASTE</h1>
       </div>
       <div className="card">
-        <p>Hello</p>
+        <p>Welcome to the new age of science</p>
       </div>
     </>
   )
