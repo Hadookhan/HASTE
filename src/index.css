@@ -1,17 +1,65 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+html { scroll-behavior: smooth; }
+.section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+section { scroll-margin-top: 80px; } /* match your navbar height */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+.hero { text-align: center; padding-top: 120px; }
+.tagline { opacity: 0.85; margin-top: 8px; }
+.ctas { display: flex; gap: 12px; justify-content: center; margin-top: 18px; }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.cardGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { padding: 16px; border: 1px solid #eaeaea; border-radius: 12px; }
+
+.featureList { display: grid; gap: 8px; padding-left: 18px; }
+
+.contactForm { display: grid; gap: 12px; max-width: 560px; }
+.contactForm input, .contactForm textarea {
+  width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 10px;
 }
+
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #ddd; }
+.btn.primary { background: black; color: white; border-color: black; }
+.link { color: #0066ee; text-decoration: none; }
+
+#hero  {
+  align-items: left;
+  text-align: center;
+  border: 20px solid black;
+  left: 0;
+  padding: 5rem;
+}
+
+.goToTop {
+  position: fixed;
+  top: 2vh;
+  background: teal;
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+
+  /* start hidden: off-screen above */
+  opacity: 0;
+  transform: translateY(-100px);
+  pointer-events: none;
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.goToTop.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.goToTop:hover {
+  color: white;
+  background: rgb(3, 75, 75);
+}
+
 
 a {
   font-weight: 500;
