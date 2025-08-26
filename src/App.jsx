@@ -1,18 +1,19 @@
-// import { useState } from 'react'
 // import hasteLogo from './assets/haste.png'
 import './App.css'
+import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
 
 function App() {
-//  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <h1 className='mainHeader'>HASTE</h1>
-      </div>
-      <div className="card">
-        <p>Welcome to the new age of science</p>
-      </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
